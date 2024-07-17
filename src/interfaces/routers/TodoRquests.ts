@@ -20,3 +20,23 @@ export interface ICreateNewTodoBody {
 export interface IDeleteTodoBody {
   todoId: number;
 }
+
+// Nuevas interfaces para estadísticas
+export interface IGetAllStatsBody {
+  userId: number;
+}
+
+export interface IUpdateStatBody {
+  statId: number;
+  newValue: number;
+}
+
+export interface ICreateNewStatBody {
+  userId: number;
+  type: string;
+  value: number;
+}
+
+export interface IDeleteStatBody {
+  statId: number;
+}
